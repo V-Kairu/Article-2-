@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c; /* Dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #2c2c2c;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 0 rgba(255, 215, 0);
+            width: 300px;
+            color: #fff;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .container a {
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+
+        .toggle-form {
+            margin-top: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .toggle-form:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="loginForm">
+        <h2>Login</h2>
+        <form onsubmit="redirectToMP3(event)">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Log In">
+            <a href="#">Forgot password?</a>
+        </form>
+        <p class="toggle-form" onclick="toggleForm()">Don't have an account? Sign Up</p>
+    </div>
+
+    <div class="container" id="signUpForm" style="display:none;">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p class="toggle-form" onclick="toggleForm()">Already have an account? Log In</p>
+    </div>
+
+    <script>
+        function toggleForm() {
+            const loginForm = document.getElementById('loginForm');
+            const signUpForm = document.getElementById('signUpForm');
+
+            if (loginForm.style.display === "none") {
+                loginForm.style.display = "block";
+                signUpForm.style.display = "none";
+            } else {
+                loginForm.style.display = "none";
+                signUpForm.style.display = "block";
+            }
+        }
+
+        function redirectToindex(event) {
+            event.preventDefault();  // Prevent the default form submission
+            window.location.href = "index.html";  
+        }
+    </script>
+</body>
+</html>
+

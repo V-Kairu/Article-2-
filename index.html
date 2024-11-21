@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+    <div class="container">
+        <h1 class="logo">Cars</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li> <!-- Login button -->
+        </ul>
+    </div>
+</nav>
+
+    <!-- Blog Header -->
+    <header class="header">
+        <div class="header-overlay">
+            <h2>SUPERCARS</h2>
+            <p>Only the coolest performance</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="content">
+        <section class="post">
+            <h3>Best Supercars</h3>
+            <img src="img/images (5).jpeg" alt="Blog Post Image" class="post-image">
+            <p>The lightning-fast reflexes and sleek design of this feline marvel resemble the Bugatti Chiron, racing ahead with unparalleled speed and elegance. Truly a predator on the asphalt!</p>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="image-gallery">
+            <h3>Hall of Fame</h3>
+            <div class="gallery-container">
+                <div class="image-item">
+                    <img src="img/huh-cat.jpg" alt="Image 1">
+                    <div class="image-caption">
+                        <h4>Bugatti Chicharon</h4>
+                        <p>A feline masterpiece boasting 1,500 hp and unmatched confusion.</p>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="img/olli-the-polite-cat.jpg" alt="Image 2">
+                    <div class="image-caption">
+                        <h4>Ferrari LaBeluga</h4>
+                        <p>The politest hybrid supercar, combining power with courtesy.</p>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="img/side-eye-cat.jpg" alt="Image 3">
+                    <div class="image-caption">
+                        <h4>Lamborghini Huracán</h4>
+                        <p>Side-eyeing the competition with its V10 ferocity.</p>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="img/Untitled-design.png" alt="Image 4">
+                    <div class="image-caption">
+                        <h4>Porsche 911 Turbo S</h4>
+                        <p>A mysterious yet iconic force on the road.</p>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="img/images (4).jpeg" alt="Image 5">
+                    <div class="image-caption">
+                        <h4>McLaren P1</h4>
+                        <p>Blending elegance and performance for a purr-fect drive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Supercars. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
